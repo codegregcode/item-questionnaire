@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Item questionnaire
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Where I work I feel like we're wasting a lot of money sending prepaid postage labels to people that don't intend to use the service or don't have the right/enough items to send to us to make any money or break even.
 
-## Available Scripts
+This app intends to take the users personal information (name, address, email, phone) as well as information about the items that they want to send us. Items the user adds to their order/lead will generate a rating high/med/low/no.
 
-In the project directory, you can run:
+This rating will dictate whether A - a pack is sent out and booking form emailed (induction call) [high], B - a digital brochure and a booking form is sent to the user [med/low], C - a digital brochure sent [no].
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To get started, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository: `git clone https://github.com/your-username/item-questionnaire.git`
+2. Navigate to the project directory: `cd item-questionnaire`
+3. Install dependencies: `npm install`
 
-### `npm test`
+## Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project relies on the following dependencies:
 
-### `npm run build`
+- **React** - A JavaScript library for building user interfaces.
+- **React DOM** - React package for working with the DOM.
+- **React Scripts** - Configuration and scripts for Create React App.
+- **Testing Library** - Utilities for testing React components.
+- **Web Vitals** - Library for measuring web vitals.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Development Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The project uses various development dependencies for linting and code formatting:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **ESLint** - Linter for identifying and reporting on patterns in JavaScript.
+- **Prettier** - Code formatter to ensure consistent code style.
+- **eslint-config-airbnb** - Airbnb's ESLint configuration.
+- **eslint-plugin-import** - ESLint plugin for linting import statements.
+- **eslint-plugin-jsx-a11y** - ESLint plugin for accessibility rules on JSX elements.
+- **eslint-plugin-react** - ESLint plugin for React-specific linting rules.
+- **eslint-plugin-react-hooks** - ESLint plugin for React Hooks rules.
+- **eslint-config-prettier** - ESLint configuration for Prettier integration.
+- **eslint-plugin-prettier** - ESLint plugin for Prettier formatting.
