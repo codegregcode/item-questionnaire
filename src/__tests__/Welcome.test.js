@@ -1,9 +1,15 @@
-import { React, render, screen } from '@testing-library/react';
+import { React, render, screen, fireEvent } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
+
 import Welcome from '../components/Welcome';
 
 describe('Welcome', () => {
   beforeEach(() => {
-    render(<Welcome />);
+    render(
+      <MemoryRouter initialEntries={['/']}>
+        <Welcome />
+      </MemoryRouter>
+    );
   });
 
   it('renders welcome message', () => {

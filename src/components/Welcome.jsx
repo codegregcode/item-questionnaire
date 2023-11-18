@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Welcome = () => {
   return (
@@ -9,7 +10,7 @@ const Welcome = () => {
         Before we send you the postage labels we would like to ask you a few
         questions regarding the items you were wishing to sell
       </p>
-      <p>Click here to get started</p>
+      <Link to="/sign-up">Click here to get started</Link>
     </div>
   );
 };
