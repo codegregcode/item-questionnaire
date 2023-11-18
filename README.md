@@ -1,4 +1,4 @@
-# Item questionnaire
+# Item Questionnaire
 
 Where I work I feel like we're wasting a lot of money sending prepaid postage labels to people that don't intend to use the service or don't have the right/enough items to send to us to make any money or break even.
 
@@ -6,13 +6,16 @@ This app intends to take the users personal information (name, address, email, p
 
 This rating will dictate whether A - a pack is sent out and booking form emailed (induction call) [high], B - a digital brochure and a booking form is sent to the user [med/low], C - a digital brochure sent [no].
 
-## Installation
+This project is just a proof of concept and not a finished product
+
+## Installation & Usage
 
 To get started, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/your-username/item-questionnaire.git`
 2. Navigate to the project directory: `cd item-questionnaire`
 3. Install dependencies: `npm install`
+4. Run production build `npm run build`
 
 ## Dependencies
 
