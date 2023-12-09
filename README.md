@@ -1,10 +1,10 @@
 # Item Questionnaire
 
-Where I work I feel like we're wasting a lot of money sending prepaid postage labels to people that don't intend to use the service or don't have the right/enough items to send to us to make any money or break even.
+Where I work I feel like we're wasting a lot of time/money sending prepaid postage labels to people that don't intend to use the service or don't have the right/enough items to send to us.
 
-This app intends to take the users personal information (name, address, email, phone) as well as information about the items that they want to send us. Items the user adds to their order/lead will generate a rating high/med/low/no.
+This app intends to take the users personal information (name, address, email, phone) as well as information about the items that they want to send us. The items the user adds to their order/lead will generate a rating high/med/low/no.
 
-This rating will dictate whether A - a pack is sent out and booking form emailed (induction call) [high], B - a digital brochure and a booking form is sent to the user [med/low], C - a digital brochure sent [no].
+This rating could dictate how customers are priortised, or whether packs are sent out etc.
 
 This project is just a proof of concept and not a finished product
 
