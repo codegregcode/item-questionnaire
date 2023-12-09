@@ -36,7 +36,7 @@ const SignUp = () => {
             type="password"
             placeholder="Password"
           />
-          <button className="signup__textBox" type="submit">
+          <button className="signup__btn" type="submit">
             Sign Up
           </button>
         </div>
