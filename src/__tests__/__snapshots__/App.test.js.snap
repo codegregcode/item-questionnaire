@@ -10,6 +10,7 @@ exports[`App renders correctly 1`] = `
     >
       <div
         class="container"
+        data-testid="svg-container"
       >
         <svg
           preserveAspectRatio="xMinYMin meet"
