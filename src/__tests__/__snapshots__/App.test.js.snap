@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="background"
+  >
+    <div
+      class="App"
+    >
+      <div
+        class="container"
+      >
+        <svg
+          preserveAspectRatio="xMinYMin meet"
+          viewBox="0 0 500 250"
+        >
+          <path
+            d="M0,50 C150,100 350,0 500,50 L500,0 L0,0 Z"
+            style="stroke: none; fill: #514F9E;"
+          />
+        </svg>
+      </div>
+      <div
+        class="title"
+      >
+        <img
+          alt="logo"
+          src="logo.png"
+        />
+      </div>
+      <div
+        class="content"
+      >
+        <div>
+           
+          <p>
+            Thank you for showing an interest in our service.
+          </p>
+          <p>
+            Before we send you the postage labels we would like to ask you a few questions regarding the items you were wishing to sell
+          </p>
+          <a
+            href="/sign-up"
+          >
+            Click here to get started
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
