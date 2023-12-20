@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Welcome from './Welcome';
 import SignUp from './SignUp';
 import Header from './Header';
+import ItemList from './ItemList';
 import '../styles/app.css';
 
 const App = () => (
@@ -13,6 +14,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/sign-up" element={<SignUp />} />
+          <Route path="brochure" element={<ItemList />} />
         </Routes>
       </div>
     </div>
