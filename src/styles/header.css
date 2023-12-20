@@ -1,0 +1,67 @@
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+  padding-top: 3vh;
+  padding-bottom: 8vh;
+}
+
+h1 {
+  margin: 0;
+}
+
+path {
+  stroke: none;
+  fill: #514f9e;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    padding-top: 2vh;
+    padding-bottom: 8vh;
+  }
+
+  .title img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  svg {
+    width: 120%;
+    transform-origin: left center;
+  }
+
+  svg path {
+    transform: scale(1.2, 2.5) translateX(-10%);
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 810px) {
+  .title {
+    padding-top: 3vh;
+    padding-bottom: 8vh;
+  }
+
+  .title img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  svg {
+    width: 120%;
+    transform-origin: center;
+  }
+
+  svg path {
+    transform: scale(1, 1.7) translateX(-5%);
+  }
+}
