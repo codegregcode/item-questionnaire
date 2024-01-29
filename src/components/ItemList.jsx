@@ -1,4 +1,5 @@
 import React from 'react';
+import Item from './Item';
 import '../styles/item-list.css';
 
 const ItemList = () => {
@@ -14,8 +15,7 @@ const ItemList = () => {
       </p>
       <p>Here&apos;s a list of all the items that we accept:</p>
       <div className="item-list">
-        {/* this is where the <Item /> will load */}
-        <p>items</p>
+        <Item />
       </div>
     </div>
   );
