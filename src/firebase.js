@@ -1,5 +1,6 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
+import 'firebase/compat/auth';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -22,15 +23,15 @@ const getItems = async () => {
   const querySnapshot = await db.collection('items').get();
 
   const items = [];
-  querySnapshot.forEach((doc) => {
-    const item = doc.data();
+  querySnapshot.forEach((i) => {
+    const item = i.data();
     items.push(item);
   });
   return items;
 };
 
-const getUserItems = () => {
+const signInWithGoogle = () => {
   return 1;
 };
 
-export { getItems, getUserItems };
+export { getItems, signInWithGoogle };
