@@ -1,10 +1,6 @@
 # Item Questionnaire
 
-Where I work I feel like we're wasting a lot of time/money sending prepaid postage labels to people that don't intend to use the service or don't have the right/enough items to send to us.
-
-This app intends to take the users personal information (name, address, email, phone) as well as information about the items that they want to send us. The items the user adds to their order/lead will generate a rating high/med/low/no.
-
-This rating could dictate how customers are priortised, or whether packs are sent out etc.
+This app intends to take the users personal information (name, address, email, phone) as well as information about the items that they want to send us.
 
 This project is just a proof of concept and not a finished product
 
