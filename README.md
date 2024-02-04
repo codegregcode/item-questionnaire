@@ -22,6 +22,10 @@ The project relies on the following dependencies:
 - **React Scripts** - Configuration and scripts for Create React App.
 - **Testing Library** - Utilities for testing React components.
 - **Web Vitals** - Library for measuring web vitals.
+- **Firebase** - A comprehensive suite for cloud-based application development
+- **Firebase Auth** - Firebase authentication library
+- **React Firebase Hooks** - Firebase hooks for React applications
+- **React Router DOM** - Declartive routing for React.js
 
 ## Development Dependencies
 
@@ -36,3 +40,4 @@ The project uses various development dependencies for linting and code formattin
 - **eslint-plugin-react-hooks** - ESLint plugin for React Hooks rules.
 - **eslint-config-prettier** - ESLint configuration for Prettier integration.
 - **eslint-plugin-prettier** - ESLint plugin for Prettier formatting.
+- **dotenv** - Loads environment variables from a .env file
