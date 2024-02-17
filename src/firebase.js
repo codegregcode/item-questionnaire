@@ -7,6 +7,8 @@ import {
   where,
   doc,
   setDoc,
+  addDoc,
+  getDoc,
 } from 'firebase/firestore';
 
 import {
@@ -90,6 +92,30 @@ const reset = async (email) => {
   }
 };
 
+const createNewBox = async () => {
+  try {
+    const user = auth.currentUser;
+
+    if (user) {
+      const { uid } = user;
+      const userRef = doc(db, 'users', user.uid);
+      const date = new Date().toDateString();
+      const boxName = `${date} - ${uid}`;
+      const boxesRef = collection(userRef, 'boxes');
+      const boxDocRef = doc(boxesRef, boxName);
+      await setDoc(boxDocRef, {
+        name: date,
+        items: [],
+        sent: [false],
+        sold: false,
+      });
+      console.log('success');
+    }
+  } catch (error) {
+    console.error(error.message);
+  }
+};
+
 const addToBox = () => {
   // checks to see if user has collection 'boxes' if not, creates doc 'uid - date': { items: [/ref/to/item, "info about item"], sent: [boolean, "tracking details if true"], sold: boolean }
   // if user has collection 'boxes' check if sold: true, if true create new doc 'uid - date' {as a above}
@@ -103,13 +129,20 @@ const removeFromBox = () => {
   // removes item/ref and item/ref i+1 (the info string)
 };
 
-const createNewBox = () => {
-  // function to create a new box
-  // will only create a new box if 21 days has passed/or box has been marked as sold (by agent) or if no other boxes
-};
-
 const deleteBox = () => {
   // function to delete box
 };
 
-export { getItems, registerWithEmailAndPassword, logout, login, reset, auth };
+const getBoxes = () => {
+  // function to get all the boxes in an array
+};
+
+export {
+  getItems,
+  registerWithEmailAndPassword,
+  logout,
+  login,
+  reset,
+  auth,
+  createNewBox,
+};

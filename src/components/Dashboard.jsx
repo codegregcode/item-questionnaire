@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { createNewBox } from '../firebase';
 
 const Dashboard = () => {
   return (
@@ -10,6 +11,9 @@ const Dashboard = () => {
       </p>
       <div className="box-container">
         <h4>Boxes:</h4>
+        <button type="button" onClick={() => createNewBox()}>
+          add box
+        </button>
       </div>
     </div>
   );
