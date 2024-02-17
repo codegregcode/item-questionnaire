@@ -8,6 +8,7 @@ import {
   doc,
   setDoc,
 } from 'firebase/firestore';
+
 import {
   getAuth,
   createUserWithEmailAndPassword,
@@ -38,6 +39,7 @@ const getItems = async () => {
     const item = i.data();
     items.push(item);
   });
+  console.log(items);
   return items;
 };
 
@@ -86,6 +88,28 @@ const reset = async (email) => {
   } catch (err) {
     console.error(err.message);
   }
+};
+
+const addToBox = () => {
+  // checks to see if user has collection 'boxes' if not, creates doc 'uid - date': { items: [/ref/to/item, "info about item"], sent: [boolean, "tracking details if true"], sold: boolean }
+  // if user has collection 'boxes' check if sold: true, if true create new doc 'uid - date' {as a above}
+  // if :false check sent: true, if true create new doc 'uid - date' {as a above}
+  // if :false add to existing box items array
+};
+
+const removeFromBox = () => {
+  // checks to see which box is active by checking boolean status of sold: and sent:
+  // finds index by matching item name with ref to item in items array
+  // removes item/ref and item/ref i+1 (the info string)
+};
+
+const createNewBox = () => {
+  // function to create a new box
+  // will only create a new box if 21 days has passed/or box has been marked as sold (by agent) or if no other boxes
+};
+
+const deleteBox = () => {
+  // function to delete box
 };
 
 export { getItems, registerWithEmailAndPassword, logout, login, reset, auth };
