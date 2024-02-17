@@ -24,10 +24,14 @@ exports[`App renders correctly 1`] = `
       <div
         class="title"
       >
-        <img
-          alt="logo"
-          src="logo.png"
-        />
+        <a
+          href="/"
+        >
+          <img
+            alt="logo"
+            src="logo.png"
+          />
+        </a>
       </div>
       <div
         class="content"
@@ -41,9 +45,22 @@ exports[`App renders correctly 1`] = `
             Before we send you the postage labels we would like to ask you a few questions regarding the items you were wishing to sell
           </p>
           <a
+            href="/login"
+          >
+            <button
+              type="button"
+            >
+              Login
+            </button>
+          </a>
+          <a
             href="/sign-up"
           >
-            Click here to get started
+            <button
+              type="button"
+            >
+              Register
+            </button>
           </a>
         </div>
       </div>

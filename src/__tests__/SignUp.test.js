@@ -1,10 +1,20 @@
-import { React, render, screen, fireEvent } from '@testing-library/react';
+import { React, render, screen, fireEvent, act } from '@testing-library/react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import SignUp from '../components/SignUp';
+
+jest.mock('react-firebase-hooks/auth', () => ({
+  useAuthState: () => [null],
+}));
 
 describe('SignUp', () => {
   beforeEach(() => {
-    render(<SignUp />);
+    render(
+      <Router>
+        <SignUp />
+      </Router>
+    );
   });
+
   it('renders SignUp component correctly', () => {
     const signUpComponent = screen.getByText(
       /Before you tell us about your items/i
@@ -36,12 +46,16 @@ describe('SignUp', () => {
     const emailInput = screen.getByPlaceholderText(/Email/i);
     const passwordInput = screen.getByPlaceholderText(/Password/i);
 
-    fireEvent.change(fullNameInput, { target: { value: 'Zesty Testy' } });
-    fireEvent.change(mobilePhoneInput, { target: { value: '1234567890' } });
-    fireEvent.change(landlineInput, { target: { value: '0987654321' } });
-    fireEvent.change(addressInput, { target: { value: '123 Fake St, LS1' } });
-    fireEvent.change(emailInput, { target: { value: 'john.doe@example.com' } });
-    fireEvent.change(passwordInput, { target: { value: 'securepassword' } });
+    act(() => {
+      fireEvent.change(fullNameInput, { target: { value: 'Zesty Testy' } });
+      fireEvent.change(mobilePhoneInput, { target: { value: '1234567890' } });
+      fireEvent.change(landlineInput, { target: { value: '0987654321' } });
+      fireEvent.change(addressInput, { target: { value: '123 Fake St, LS1' } });
+      fireEvent.change(emailInput, {
+        target: { value: 'john.doe@example.com' },
+      });
+      fireEvent.change(passwordInput, { target: { value: 'securepassword' } });
+    });
 
     expect(fullNameInput.value).toBe('Zesty Testy');
     expect(mobilePhoneInput.value).toBe('1234567890');
