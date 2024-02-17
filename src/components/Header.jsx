@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import '../styles/header.css';
 
@@ -11,7 +12,9 @@ const Header = () => {
         </svg>
       </div>
       <div className="title">
-        <img src={logo} alt="logo" />
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
     </>
   );
